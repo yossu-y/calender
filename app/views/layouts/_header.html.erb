@@ -1,7 +1,7 @@
 <% if user_signed_in? %>
   タイトル
   <%= link_to "Home", user_path(current_user) %>
-  <%= link_to "log_out", destrou_user_session_path, method: :delete %>
+  <%= link_to "log_out", destroy_user_session_path, method: :delete %>
 <% else %>
   タイトル
   <%= link_to "sign_in", new_user_registration_path %>
