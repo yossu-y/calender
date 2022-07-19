@@ -1,0 +1,17 @@
+<%= form_with model: @schedule, local: true do |f| %>
+  <div class="form">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div class="form">
+    <%= f.label :start_time %>
+    <%= f.datetime_select :start_time %>
+  </div>
+  <div class="form">
+    <%= f.label :body %>
+    <%= f.text_field :body %>
+  </div>
+  <div class="actions">
+    <%= f.submit "送信する" %>
+  </div>
+<% end %>
