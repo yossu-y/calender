@@ -1,9 +1,9 @@
 <% if user_signed_in? %>
-  タイトル
+  タイトルを挿入する
   <%= link_to "Home", user_path(current_user) %>
   <%= link_to "log_out", destroy_user_session_path, method: :delete %>
 <% else %>
-  タイトル
+  タイトルを挿入する
   <%= link_to "sign_in", new_user_registration_path %>
   <%= link_to "log_in", new_user_session_path %>
 <% end %>
