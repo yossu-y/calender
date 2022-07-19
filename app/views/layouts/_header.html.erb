@@ -1,6 +1,6 @@
 <% if user_signed_in? %>
   タイトルを挿入する
-  <%= link_to "Home", user_path(current_user) %>
+  <%= link_to "マイページ", user_path(current_user) %>
   <%= link_to "log_out", destroy_user_session_path, method: :delete %>
 <% else %>
   タイトルを挿入する
