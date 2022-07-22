@@ -1,2 +1,18 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
+<%= form_with model: @user, local: true do |f| %>
+  <h3>プロフィール編集</h3>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :nackname %>
+    <%= f.text_field :nackname %>
+  </div>
+  <div>
+    <%= f.label :introduction %>
+    <%= f.text_field :introduction %>
+  </div>
+  <div>
+    <%= f.submit "変更する" %>
+  </div>
+<% end %>
