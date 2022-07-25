@@ -1,7 +1,7 @@
 class SchedulesController < ApplicationController
 
   def index
-    @schedule = Schedule.all
+    @schedules = Schedule.all
   end
 
   def new
@@ -17,6 +17,10 @@ class SchedulesController < ApplicationController
       @schedule = Schedule.all
       render "index"
     end
+  end
+
+  def edit
+    @schedule = Schedule.find(params[:id])
   end
 
   private
