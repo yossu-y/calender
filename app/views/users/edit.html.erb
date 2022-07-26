@@ -1,15 +1,15 @@
 <%= form_with model: @user, local: true do |f| %>
   <h3>プロフィール編集</h3>
-  <div>
-    <%= f.label :name %>
+  <div class="form" style="margin-bottom: 5px">
+    <%= f.label :name, "名前" %><br>
     <%= f.text_field :name %>
   </div>
-  <div>
-    <%= f.label :nackname %>
+  <div class="form" style="margin-bottom: 5px">
+    <%= f.label :nackname, "ニックネーム" %><br>
     <%= f.text_field :nackname %>
   </div>
-  <div>
-    <%= f.label :introduction %>
+  <div class="form" style="margin-bottom: 5px">
+    <%= f.label :introduction, "自己紹介" %><br>
     <%= f.text_field :introduction %>
   </div>
   <div>

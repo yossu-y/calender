@@ -1,14 +1,14 @@
 <%= form_with model: @schedule, local: true do |f| %>
-  <div class="form">
-    <%= f.label :title %>
+  <div class="form" style="margin-bottom: 5px">
+    <%= f.label :title, "予定" %><br>
     <%= f.text_field :title %>
   </div>
-  <div class="form">
-    <%= f.label :start_time %>
+  <div class="form" style="margin-bottom: 5px">
+    <%= f.label :start_time, "開始時間" %><br>
     <%= f.datetime_select :start_time %>
   </div>
-  <div class="form">
-    <%= f.label :body %>
+  <div class="form" style="margin-bottom: 5px">
+    <%= f.label :body, "予定内容" %><br>
     <%= f.text_field :body %>
   </div>
   <div class="actions">
